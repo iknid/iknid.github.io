@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dikeshma Shrestha — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .delay-0 { --delay: 0s; }
+    .delay-1 { --delay: 0.1s; }
+    .delay-15 { --delay: 0.15s; }
+    .delay-2 { --delay: 0.2s; }
+    .delay-3 { --delay: 0.3s; }
+    .delay-4 { --delay: 0.4s; }
+    .delay-5 { --delay: 0.5s; }
+
+    .w-65 { --w: 65%; }
+    .w-70 { --w: 70%; }
+    .w-75 { --w: 75%; }
+    .w-80 { --w: 80%; }
+    .w-85 { --w: 85%; }
+    .w-100 { --w: 100%; }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- BACKGROUND PARTICLES -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">IKNID<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-track">
+          <span class="toggle-thumb">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </span>
+        </span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    f
+    <div class="hero-content">
+      <div class="hero-left reveal-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Open to opportunities
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-name">Dikeshma</span><br/>
+          <span class="hero-subtitle-line">Shrestha</span>
+        </h1>
+        <p class="hero-desc">
+          Engineering student passionate about <strong>Embedded Systems</strong> &amp; <strong>Web Development</strong>. Curious explorer eager to build meaningful things.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <span>Get in touch</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+         
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Languages</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Focus Areas</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            
+          </div>
+        </div>
+      </div>
+      <div class="hero-right reveal-right">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-ring ring-3"></div>
+          <div class="avatar-frame">
+           <div class="avatar-inner">
+     <img src="ds.jpeg" alt="Dikeshma Shrestha" />
+    </div>
+            </div>
+          </div>
+          <div class="floating-badge badge-html">HTML</div>
+          <div class="floating-badge badge-cpp">C++</div>
+          <div class="floating-badge badge-js">JS</div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Who I am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>I'm an engineering student at <strong>ACEM</strong>, driven by a deep curiosity about how things work,from the logic inside a microcontroller to the pixels on a webpage.</p>
+          <p>My journey spans embedded systems, where I love working close to hardware, all the way to web interfaces that people actually interact with. I believe the best are those who never stop exploring.</p>
+          <div class="about-tags">
+            <span class="tag">Problem Solver</span>
+            <span class="tag">Fast Learner</span>
+            <span class="tag">Tech Explorer</span>
+          </div>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="info-card card-glow">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div>
+              <h4>Embedded Systems</h4>
+              <p>Low-level programming with C/C++, hardware interfacing</p>
+            </div>
+          </div>
+          <div class="info-card card-glow">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div>
+              <h4>Web Development</h4>
+              <p>Building interfaces with HTML, CSS, and JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">What I know</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal-up delay-0">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>HTML</h3>
+          <p>Semantic markup & structure</p>
+          <div class="skill-bar"><div class="skill-fill w-85"></div></div>
+        </div>
+        <div class="skill-card reveal-up delay-1">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3>CSS</h3>
+          <p>Styling & animations</p>
+          <div class="skill-bar"><div class="skill-fill w-80"></div></div>
+        </div>
+        <div class="skill-card reveal-up delay-2">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Interactivity & logic</p>
+          <div class="skill-bar"><div class="skill-fill w-70"></div></div>
+        </div>
+        <div class="skill-card reveal-up delay-3">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>C / C++</h3>
+          <p>Systems & embedded logic</p>
+          <div class="skill-bar"><div class="skill-fill w-75"></div></div>
+        </div>
+        <div class="skill-card reveal-up delay-4">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+          </div>
+          <h3>Embedded Systems</h3>
+          <p>Hardware programming</p>
+          <div class="skill-bar"><div class="skill-fill w-65"></div></div>
+        </div>
+        <div class="skill-card reveal-up delay-5">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Always Learning</h3>
+          <p>New tools & technologies</p>
+          <div class="skill-bar"><div class="skill-fill w-100"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">My journey</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-item reveal-up delay-0">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-card card-glow">
+            <span class="timeline-badge current">Current</span>
+            <h3>Bachelor of Engineering</h3>
+            <p class="tl-inst">ACEM — Advanced College of Engineering & Management</p>
+            <p class="tl-desc">Pursuing BE in Electornics Communicationa and Information.</p>
+            <p class="tl-desc"> Bhuwaneshwari Marg, Kathmandu </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up delay-15">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card card-glow">
+            <span class="timeline-badge">Completed</span>
+            <h3>Higher Secondary (+2)</h3>
+            <p class="tl-inst">UGSS - Uniglobe Secondary College</p>
+            <p class="tl-desc">Science stream .</p>
+            <p class="tl-desc"> Kamaladi, Kathmandu </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card card-glow">
+            <span class="timeline-badge">Completed</span>
+            <h3>School (SEE)</h3>
+            <p class="tl-inst">Ambrosia Ideal Secondary School</p>
+           
+            <p class="tl-desc"> Satungal, Kathmandu </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Say hello</span>
+        <h2 class="section-title">Get in Touch</h2>
+      </div>
+      <div class="contact-wrapper reveal-up">
+        <div class="contact-left">
+          <p>I'm always open to new connections or just a friendly chat. Drop me a message!</p>
+          <div class="contact-links">
+            <a href="mailto:dikeshmashrestha@gmail.com" class="contact-link">
+              <span class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <span>dikeshmashrestha@gmail.com</span>
+            
+            </a>
+           <a href="https://github.com/iknid" class="contact-link">
+              <span class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </span>
+              <span>github.com/inkid</span>
+            </a>
+           
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="dikeshmashrestha@gmail.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">IKNID<span class="dot">.</span></span>
+        <p>Built with HTML, CSS & JS · © 2026 Dikeshma Shrestha</p>
+        <div class="footer-links">
+          <a href="#home">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
